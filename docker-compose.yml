@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: hbi
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      - DATABASE_URL=postgresql://user:password@postgres/hbi
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY=change_me
+    volumes:
+      - ./uploads:/uploads
+      - ./models:/models
+
+  celery_worker:
+    build: .
+    command: celery -A tasks.celery_app worker --loglevel=info
+    depends_on:
+      - redis
+      - postgres
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - DATABASE_URL=postgresql://user:password@postgres/hbi
+      - SECRET_KEY=change_me
+    volumes:
+      - ./uploads:/uploads
+      - ./models:/models
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow
+    ports:
+      - "5000:5000"
+    command: mlflow server --host 0.0.0.0 --backend-store-uri postgresql://user:password@postgres/hbi --default-artifact-root /mlflow-artifacts
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
+  mlflow_artifacts:

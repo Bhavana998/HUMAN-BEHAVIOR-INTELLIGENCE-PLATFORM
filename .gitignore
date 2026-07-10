@@ -1,0 +1,33 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Environment & Secrets
+.env
+.streamlit/secrets.toml
+
+# Database
+*.db
+*.sqlite3
+test.db
+
+# Local data
+uploads/
+models/
+mlruns/
+*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
