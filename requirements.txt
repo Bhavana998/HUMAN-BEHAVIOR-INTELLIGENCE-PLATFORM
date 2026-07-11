@@ -31,3 +31,4 @@ plotly
 matplotlib
 wordcloud
 fpdf
+PyJWT
