@@ -258,9 +258,7 @@ human-behavior-intelligence-platform/
 ├── README.md
 └── LICENSE
 ```
-```
 
----
 
 # 🚀 Quick Start
 
