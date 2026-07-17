@@ -208,23 +208,56 @@ Registry --> Urgency
 ```text
 human-behavior-intelligence-platform/
 │
-├── api/
-├── configs/
-├── core/
+├── api/                          # FastAPI application
+│   ├── routers/                  # API route handlers
+│   ├── dependencies.py           # Dependency injection
+│   └── main.py                   # FastAPI entry point
+│
+├── configs/                      # Application configuration
+│
+├── core/                         # Security, authentication & exceptions
+│
 ├── database/
-├── inference/
-├── repositories/
-├── schemas/
-├── services/
-├── tasks/
-├── training/
-├── tests/
-├── utils/
-├── app.py
+│   ├── models/                   # SQLAlchemy models
+│   └── session.py                # Database session
+│
+├── features/                     # Feature modules
+│
+├── inference/                    # Hugging Face inference pipeline
+│
+├── migrations/                   # Alembic database migrations
+│
+├── pipelines/                    # ML pipelines
+│
+├── repositories/                 # Repository pattern
+│
+├── schemas/                      # Pydantic request/response schemas
+│
+├── scripts/                      # Utility scripts
+│
+├── services/                     # Business logic layer
+│
+├── tasks/                        # Background tasks (Celery)
+│
+├── tests/                        # Unit & integration tests
+│
+├── training/                     # Model training & fine-tuning
+│
+├── utils/                        # Helper functions & logging
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml                # GitHub Actions CI/CD
+│
 ├── Dockerfile
 ├── docker-compose.yml
+├── nginx.conf
 ├── requirements.txt
-└── README.md
+├── sample_text.csv
+├── predictions.csv
+├── README.md
+└── LICENSE
+```
 ```
 
 ---
