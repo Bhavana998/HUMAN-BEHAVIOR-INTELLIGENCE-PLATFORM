@@ -1,12 +1,19 @@
-<div align="center">
+<p align="center">
+  <img src="assets/banner.png" alt="Human Behavior Intelligence Platform Banner" width="100%">
+</p>
 
-# 🧠 Human Behavior Intelligence Platform
+<h1 align="center">🧠 Human Behavior Intelligence Platform</h1>
 
-### AI-Powered Human Behavior Analysis Platform
+<p align="center">
+AI-Powered Human Behavior Analysis using NLP & Transformers
+</p>
 
-Analyze human behavior from text using state-of-the-art Transformer models. Predict **Sentiment**, **Emotion**, **Toxicity**, and **Urgency** with Explainable AI.
+<p align="center">
+Analyze human behavior from text using state-of-the-art Transformer models.
+Predict <b>Sentiment</b>, <b>Emotion</b>, <b>Toxicity</b>, and <b>Urgency</b> with Explainable AI.
+</p>
 
-<p>
+<p align="center">
 <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 <img src="https://img.shields.io/badge/FastAPI-0.104.1-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
 <img src="https://img.shields.io/badge/Streamlit-1.28-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
@@ -15,10 +22,13 @@ Analyze human behavior from text using state-of-the-art Transformer models. Pred
 <img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge"/>
 </p>
 
-**Production Ready • Explainable AI • FastAPI • Streamlit • Hugging Face**
+<p align="center">
+<b>Production Ready • Explainable AI • FastAPI • Streamlit • Hugging Face</b>
+</p>
 
+<p align="center">
 ⭐ If you find this project useful, please give it a Star!
-
+</p>
 </div>
 
 ---
