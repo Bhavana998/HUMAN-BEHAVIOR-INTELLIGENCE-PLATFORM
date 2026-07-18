@@ -548,7 +548,7 @@ This project is licensed under the **MIT License**.
 
 ## **Bhavana Setty**
 
-**AI Engineer | Machine Learning | NLP | MLOps**
+**AI Engineer**
 
 GitHub: **https://github.com/Bhavana998**
 
