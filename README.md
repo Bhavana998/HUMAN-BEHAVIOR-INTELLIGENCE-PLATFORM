@@ -2,8 +2,6 @@
 <img src="output/banner.png" alt="Human Behavior Intelligence Platform Banner" width="100%">
 </p>
 
-<h1 align="center">🧠 Human Behavior Intelligence Platform</h1>
-
 <p align="center">
 AI-Powered Human Behavior Analysis using NLP & Transformers
 </p>
