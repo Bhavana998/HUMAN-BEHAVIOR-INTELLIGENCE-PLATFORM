@@ -261,9 +261,9 @@ human-behavior-intelligence-platform/
 │
 ├── inference/                    # Hugging Face inference pipeline
 │
-├── migrations/                # Alembic database migrations
+├── migrations/                   # Alembic database migrations
 │
-|___ Outputs/                   # Application screenshots
+|___ Outputs/                     # Application screenshots
 |
 ├── pipelines/                    # ML pipelines
 │
