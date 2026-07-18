@@ -516,12 +516,9 @@ This project is licensed under the **MIT License**.
 
 GitHub: **https://github.com/Bhavana998**
 
+Gmail: **bhavanasetty95@gmail.com**
+
 ---
 
 <div align="center">
-
-### Built with ❤️ using FastAPI, Streamlit, PyTorch and Hugging Face Transformers.
-
-⭐ **If you found this project useful, please give it a Star!**
-
 </div>
